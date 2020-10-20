@@ -22,8 +22,6 @@ Prerequisitos:
   
  
  
- 
- 
 # Capa 1: Conexión entre la Red de Fabric y la aplicación.
  
  
@@ -40,7 +38,7 @@ Esta corresponde a un instancia la cual se encuentra configurada con los siguien
  
  
  
-# Capa 2: Conexion al Load balancer.
+# Capa 2: Conexión al Load balancer.
  
 Esta capa corresponde a la conexión entre la instancia y un load balancer de tipo https.
 
@@ -50,9 +48,9 @@ Esta capa corresponde a la conexión entre la instancia y un load balancer de ti
  
 Esta capa corresponde al registro de la ip del balancear a tu domino propio (en este caso un dominio en AWS), este consta:
  
-   * La Creación de un Zona con Cloud DNS y enlazarla a un Dominio en AWS.
+   * La creación de un Zona con Cloud DNS y enlazarla a un Dominio en AWS.
  
-   * El Registro de la ip del balancer a la zona.
+   * El registro de la ip del balancer a la zona.
  
  
 # Capa 4: Conexión a apigee:
