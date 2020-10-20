@@ -9,19 +9,27 @@
 
 ![Crear](images/G2.png)
 
- Haz clic en Grupo de instancias no administrado nuevo.
+
+
+* Haz clic en Grupo de instancias no administrado nuevo.
  
- ![]
+ 
 
-Ingresa un nombre para el grupo de instancias no administrado.
+* Ingresa un nombre para el grupo de instancias no administrado.
 
-En agregar un puerto selecciona el puerto 443 o el p y como nombre pon http.
 
-En Ubicación, selecciona una región y una zona.
+* En agregar un puerto selecciona el puerto 443 o el p y como nombre pon http.
 
-Selecciona una Red y una Subred.
+* En Ubicación, selecciona una región y una zona.
 
-En Instancias de VM, selecciona las VM que desees agregar a este grupo en este caso agrega la que correrá en nuestra aplicación.
+* Selecciona una Red y una Subred.
+
+* En Instancias de VM, selecciona las VM que desees agregar a este grupo en este caso agrega la que correrá en nuestra aplicación.
+
+# Ejemplo:
+
+![](images/G3.png)
+
 
 Haz clic en Crear.
 ---
@@ -64,3 +72,34 @@ Los recursos externos no pueden acceder directamente a ninguna de las instancias
 
 
 En nuestro caso usamos una configuración básica de  Cloud NAT:
+
+
+
+
+
+* En Google Cloud Console, ve a la página de Cloud Nat.
+
+* [Ir a la página de Cloud NAT](https://console.cloud.google.com/net-services/nat/list?hl=es&_ga=2.10075125.1577132522.1603220388-459450626.1601906451)
+
+* Haz clic en Comenzar o Crear la puerta de enlace NAT.
+
+* Ingresa un Nombre de puerta de enlace.
+
+* Elige una red de VPC la de nosotros es la default.
+
+* Configura la Región para la puerta de enlace NAT, en este caso debe ser la misma que usa la máquina con la aplicación .
+
+* Selecciona o crea un Cloud Router en la región y dale el nombre que prefieras.
+
+* Haz clic en Registro, puertos mínimos, tiempo de espera para abrir esa sección.
+
+* En la sección Stackdriver Logging, selecciona Traducción y errores. Esto envía todos los registros a Cloud Logging.
+
+* Haz clic en Crear.
+
+* Espera un rato y verifica si en la máquina sin ip externa puedes realizarle una actualización.
+
+* Si es así el NAT está habilitado.
+
+
+
