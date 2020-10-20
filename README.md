@@ -1,4 +1,4 @@
-# security-architecture
+# Security-Architecture
 Aquitectura de seguridad de la red 
 
 Prerequisitos:
@@ -15,7 +15,7 @@ Prerequisitos:
  
 # Esquema de Conexión:
  
- [Security Architecture](images/Esquema.png)
+ ![Security Architecture](images/Esquema.png)
   
   
   
@@ -43,7 +43,7 @@ Esta corresponde a un instancia la cual se encuentra configurada con los siguien
 # Capa 2: Conexion al Load balancer.
  
 Esta capa corresponde a la conexión entre la instancia y un load balancer de tipo https.
- 
+
  
 # Capa 3: Registro de la Aplicación a un Dominio.
  
