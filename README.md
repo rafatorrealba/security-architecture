@@ -15,7 +15,7 @@ Prerequisitos:
  
 # Esquema de Conexión:
  
- [Security Architecture](Images/Esquema de Seguridad.png)
+ [Security Architecture](images/Esquema.png)
   
   
   
