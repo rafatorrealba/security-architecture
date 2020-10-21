@@ -40,14 +40,14 @@ Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Grupo-Instanc
  
  
  
-# Capa 2: Conexión al Load balancer.
+# Capa 2: Conexión al Load balancer:
  
 Esta capa corresponde a la conexión entre la instancia y un load balancer de tipo https.
 
 Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Load-Balancing.md)
 
 
-# Capa 3: Registro de la Aplicación a un Dominio.
+# Capa 3: Registro de la Aplicación a un Dominio:
  
  
 Esta capa corresponde al registro de la ip del balancear a tu domino propio (en este caso un dominio en AWS), este consta:
@@ -65,3 +65,9 @@ Esta capa corresponde al registro de la ip del balancear a tu domino propio (en 
 Esta capa corresponde a la conexion de la aplicación registrada en el dominio al entorno de apigee.
 
 Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Apigee.md)
+
+
+# Configuraciones Adicionales:
+
+* [Limitar Acceso solo apigee](/Docs/Cloud-Armor.md)
+
