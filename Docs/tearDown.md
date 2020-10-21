@@ -39,3 +39,15 @@
 * Para borrar la zona, haz clic en el ícono de borrar delete correspondiente al nombre de la zona my-new-zone.
  
 * Por último en AWS borra los servidores de nombres que colocaste y coloca los que tenía por defecto y habilita el bloqueo de transferencia.
+
+# Apigee:
+
+* En la seccion de proxys selecciona tu proxy.
+
+* ingresa al mismo y en la sección Deployment aparecera el icono de test en verde seleccionalo.
+
+* Te aparecerá un mensaje alli selecciona la opción de undeploy.
+
+* Luego vuelve a la sección de proxys mueve el cursor hacia el proxy y pincha en el icono de trash una vez hecho esto se eliminará
+el proxy.
+
