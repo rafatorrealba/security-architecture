@@ -7,12 +7,11 @@
 
 * Haz clic en Crear un grupo de instancias.
 
-![Crear](images/G2.png)
+![Crear](../images/Grupos-Instancia/G2.png)
 
 
 
 * Haz clic en Grupo de instancias no administrado nuevo.
- 
  
 
 * Ingresa un nombre para el grupo de instancias no administrado.
@@ -28,19 +27,21 @@
 
 # Ejemplo:
 
-![](images/G3.png)
+![Grupo de instancias](../images/Grupos-Instancia/G3.png)
 
 
-Haz clic en Crear.
+* Has click en crear.
 ---
 
 # 2) Conectarse a la instancia
 
 - En GCP Console, ve a la página Instancias de VM.
 
-- En la lista de instancias de máquinas virtuales, haz clic en SSH en la fila de la instancia a la que deseas conectarte.
+- En la lista de instancias de máquinas virtuales, haz clic en SSH en la fila de la instancia a la que deseas conectarte, para este caso nos conectaremos a una instancia diferente a la del grupo de instancia.
 
+- Esto se debe  a que la instancia en la que correrá la aplicación, no tendra ip externa por lo que no podremos conectarnos a ella desde fuera de la red, de manera que solo se podra llegar a ella a tráves de una conexión  dentro de la misma red.
 
+- Debes tener en cuenta que esta debe estar en la misma zona que la instancia con la aplicación.
 
 ![Botón SSH junto al nombre de la instancia.](https://cloud.google.com/docs/images/establish-ssh-connection-1.png?hl=es-419)
 
@@ -48,18 +49,21 @@ Haz clic en Crear.
 
 - Para desconectarse simplemente cierra la ventana del ssh.
 
-- Para este este caso primero crea otra vm siguiendo los pasos anteriores y una vez creada conectate a esta
-
-- Esto se debe  a que más adelante aislamos la instancia en la que correrá la aplicación, de manera que la única forma que le lleguemos totalmente sea a través de una conexión interna dentro de la misma red.
-
 - Esta vm la llamaremos host bastión, y será nuestra forma de ingresar a la vm para levantar la red, una vez en en el host bastion nos conectaremos a la instancia que correrá la aplicación la cual llamaremos backend a través de la ip interna:
 
 
 
 ```
+# La zona que aquí se coloco, es de ejemplo si tu máquina usa una zona diferente tendrás que cambiarla
 gcloud compute ssh [nombre de la vm] --internal-ip --zone=us-central1-a
+
+# si los paquetes de la aplicación y la red se encuentran en un usuario predeterminado:
+
+gcloud compute ssh [usuario]@[nombre de la vm] --internal-ip --zone=us-central1-a 
 ```
-Una vez listo  estaremos conectados.
+* Una vez listo  estaremos conectados.
+
+* Notaras que no podras hacer una update eso es porque la instancia al no tener ip externa no tendra acceso a la red.
 
 
 # 3) Conexión a Cloud NAT:
@@ -72,9 +76,6 @@ Los recursos externos no pueden acceder directamente a ninguna de las instancias
 
 
 En nuestro caso usamos una configuración básica de  Cloud NAT:
-
-
-
 
 
 * En Google Cloud Console, ve a la página de Cloud Nat.
