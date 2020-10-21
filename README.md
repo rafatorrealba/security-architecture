@@ -71,3 +71,10 @@ Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Apigee.md)
 
 * [Limitar Acceso solo apigee](/Docs/Cloud-Armor.md)
 
+# Borrar Load Balancing, Zona DNS y grupo de instancia.
+
+* [Borrar](/Docs/tearDown.md)
+
+
+
+
