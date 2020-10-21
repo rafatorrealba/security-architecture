@@ -3,7 +3,7 @@ Aquitectura de seguridad de la red
 
 Prerequisitos:
  
-* Una vm o maquina entre 4gb 0 7gb de ram minimo y 30gb de almacenamiento
+* Una vm o máquina entre 4gb 0 7gb de ram minimo y 30gb de almacenamiento
  
 * Instalado los prerrequisitos de Hyperledger Fabric.
  
@@ -34,6 +34,8 @@ Esta corresponde a un instancia la cual se encuentra configurada con los siguien
   * Conexión a Cloud NAT (VM sin ip interna) como enlace seguro a un nodo de iota .
  
   * Adición a un grupo de instancia no administrado, con un puerto asignado y que corresponda con el de la aplicación.
+  
+Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Grupo-Instancia.md)
  
  
  
@@ -41,6 +43,8 @@ Esta corresponde a un instancia la cual se encuentra configurada con los siguien
 # Capa 2: Conexión al Load balancer.
  
 Esta capa corresponde a la conexión entre la instancia y un load balancer de tipo https.
+
+Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Load-Balancing.md)
 
  
 # Capa 3: Registro de la Aplicación a un Dominio.
