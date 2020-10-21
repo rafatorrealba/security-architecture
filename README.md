@@ -46,7 +46,7 @@ Esta capa corresponde a la conexión entre la instancia y un load balancer de ti
 
 Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Load-Balancing.md)
 
- 
+
 # Capa 3: Registro de la Aplicación a un Dominio.
  
  
@@ -56,9 +56,12 @@ Esta capa corresponde al registro de la ip del balancear a tu domino propio (en 
  
    * El registro de la ip del balancer a la zona.
  
+ Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/App-Domain.md)
+ 
  
 # Capa 4: Conexión a apigee:
  
  
 Esta capa corresponde a la conexion de la aplicación registrada en el dominio al entorno de apigee.
 
+Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Apigee.md)
