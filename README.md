@@ -3,13 +3,13 @@ Aquitectura de seguridad de la red
 
 Prerequisitos:
  
-* Una vm o máquina entre 4gb 0 7gb de ram minimo y 30gb de almacenamiento
+* Una vm o máquina entre 4gb 0 7gb de ram minimo y 30gb de almacenamiento.
  
 * Instalado los prerrequisitos de Hyperledger Fabric.
  
-* Golang en sus versiones 1.13 o 1.14
+* Golang en sus versiones 1.13 o 1.14.
 
-* SDK para google cloud 
+* SDK de gcloud.
  
 ---
  
