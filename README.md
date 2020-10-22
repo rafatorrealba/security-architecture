@@ -8,6 +8,8 @@ Prerequisitos:
 * Instalado los prerrequisitos de Hyperledger Fabric.
  
 * Golang en sus versiones 1.13 o 1.14
+
+* SDK para google cloud 
  
 ---
  
@@ -22,7 +24,7 @@ Prerequisitos:
   
  
  
-# Capa 1: Conexión entre la Red de Fabric y la aplicación.
+# Capa 1: Conexión entre la Red de Fabric y la Aplicación.
  
  
 Esta corresponde a un instancia la cual se encuentra configurada con los siguientes elementos:
@@ -59,7 +61,7 @@ Esta capa corresponde al registro de la ip del balancear a tu domino propio (en 
  Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/App-Domain.md)
  
  
-# Capa 4: Conexión a apigee:
+# Capa 4: Conexión a Apigee:
  
  
 Esta capa corresponde a la conexion de la aplicación registrada en el dominio al entorno de apigee.
@@ -71,7 +73,7 @@ Nota: si quieres saber como realizar esta capa pulsa [aquí](/Docs/Apigee.md)
 
 * [Limitar Acceso solo apigee](/Docs/Cloud-Armor.md)
 
-# Borrar Load Balancing, Zona DNS y grupo de instancia.
+# Borrar Load Balancing, Zona DNS y Grupo de Instancia.
 
 * [Borrar](/Docs/tearDown.md)
 
