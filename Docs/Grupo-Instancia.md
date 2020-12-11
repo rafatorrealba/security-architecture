@@ -51,14 +51,14 @@
 - Esta vm la llamaremos host bastión, y será nuestra forma de ingresar a la vm para levantar la red, una vez en en el host bastion nos conectaremos a la instancia que correrá la aplicación la cual llamaremos backend a través de la ip interna:
 
 
-```
+
 # La zona que aquí se coloco, es de ejemplo si tu máquina usa una zona diferente tendrás que cambiarla
 gcloud compute ssh [nombre de la vm] --internal-ip --zone=us-central1-a
 
 # si los paquetes de la aplicación y la red se encuentran en un usuario predeterminado:
 
 gcloud compute ssh [usuario]@[nombre de la vm] --internal-ip --zone=us-central1-a 
-```
+
 * Una vez listo  estaremos conectados.
 
 
